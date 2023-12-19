@@ -1,0 +1,30 @@
+edit editor 
+manager in 9 done
+no of news for specfic editor 7 done
+=========
+edit category 
+managed by 1  done
+no of news for specfic category 8 done
+============
+add news 
+main image 10 
+news images  11
+============
+edit news 
+main image 12
+written by 2 done
+belong to 3 done
+===========
+show images 
+display all images  13
+delete image  14
+add image 15
+======
+index
+no of editors 4 done 
+no of categories	5 done
+no of news	6 done
+====
+login and auth 16 
+===========
+front area 17

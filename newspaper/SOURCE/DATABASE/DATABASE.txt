@@ -1,0 +1,35 @@
+CREATE DATABASE newspaper8;
+USE newspaper8;
+CREATE TABLE editor(
+	id int(11) PRIMARY KEY AUTO_INCREMENT, 
+	name varchar(50),
+	salary float
+);
+CREATE TABLE category(
+	id int(11) PRIMARY KEY AUTO_INCREMENT,
+	name varchar(50),
+	id_manager int(11),
+	FOREIGN KEY(id_manager) REFERENCES editor(id)
+);
+CREATE TABLE news(
+	id int(11) PRIMARY KEY AUTO_INCREMENT,
+	title varchar(255),
+	content text,
+	id_editor int(11),
+	id_category int(11),
+	main_image varchar(255),
+	FOREIGN KEY(id_editor) REFERENCES editor(id),
+	FOREIGN KEY(id_category) REFERENCES category(id)
+);
+
+CREATE TABLE news_image(
+	id_news int(11),
+	image_name varchar(255),
+	FOREIGN KEY(id_news) REFERENCES news(id),
+	PRIMARY KEY(id_news, image_name)
+);
+CREATE TABLE admin(
+	id int(11) PRIMARY KEY AUTO_INCREMENT, 
+	username varchar(50),
+	password varchar(32)
+);

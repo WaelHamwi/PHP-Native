@@ -1,0 +1,25 @@
+1 - create erd 
+2 - map erd to sql 
+3 - create structure of folders 
+	-cpanel/template 
+	-lib
+	-helpers
+	-upload
+	-template
+4 - create configuration file in root folder (config.php)
+contain settings for your website 
+like database connection configuration 
+5 - create all models like (editor, category, news , Admin, Statstics and NewsImage)
+in lib folder 
+6 - start work with cpanel area before do anything 
+sepearate your design into some files like 
+(header.tpl, navbar.tpl and footer.tpl)
+7 - create all files we are needed to access data from cpanel area 
+like (addeditor.php, editeditor.php, addcategory.php, editcategory.php
+addnews.php, editnews.php and index.php)
+8 - close cpanel by AUTH 
+9 - start work with front area before do anything 
+sepearate your design into some files like 
+(header.tpl, navbar.tpl and footer.tpl)
+10 - create all files we are needed to access data from front area 
+like (index.php, category.php, news.php)
